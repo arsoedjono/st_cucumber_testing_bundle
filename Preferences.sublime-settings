@@ -1,0 +1,7 @@
+{
+  // output panel
+  "panel_settings": {
+    "encoding": "utf-8",
+    "color_scheme": "Packages/CucumberTestingBundle//theme/CucumberTestingBundle.tmTheme",
+  },
+}
