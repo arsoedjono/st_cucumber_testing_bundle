@@ -8,5 +8,6 @@ class Job(object):
     self.panel = Panel(self.window, self.edit)
 
   def run_cucumber(self):
-    self.panel.write("execute cucumber")
-    self.panel.display_panel()
+    self.window.run_command("exec", {
+      "shell_cmd": "cucumber"
+    })
