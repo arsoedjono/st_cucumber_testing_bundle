@@ -1,5 +1,20 @@
 [
   {
+    "id": "tools",
+    "children": [
+      {
+        "id": "CucumberTestingBundle",
+        "caption": "CucumberTestingBundle",
+        "children": [
+          {
+            "caption": "Run Cucumber",
+            "command": "run_cucumber"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "preferences",
     "children": [
       {
