@@ -1,0 +1,7 @@
+[
+  // run cucumber
+  {
+    "keys": ["alt+shift+c"],
+    "command": "run_cucumber"
+  }
+]
