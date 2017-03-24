@@ -1,0 +1,14 @@
+{
+  // output panel
+  "panel_settings": {
+    "encoding": "utf-8",
+    "color_scheme": "Packages/CucumberTestingBundle//theme/CucumberTestingBundle.tmTheme",
+  },
+
+  // cucumber
+  "cucumber_command": "cucumber",
+  "cucumber_folder": "features",
+
+  // dependencies
+  "rvm_path": "~/.rvm/bin/rvm-auto-ruby",
+}
