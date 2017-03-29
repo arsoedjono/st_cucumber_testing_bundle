@@ -17,10 +17,10 @@ class Command(object):
     file_dir = os.path.expanduser(Settings("rvm_path").retrieve())
     if file_dir and os.path.isfile(file_dir): return "{0} -S".format(file_dir)
 
-  def retrieve(self, target = None):
+  def retrieve(self, target = None, line = None):
     return " ".join(filter(None, [
       self._get_rvm(),
       self._get_bundler(),
       Settings("cucumber_command").retrieve(),
-      target
+      ":".join(filter(None, [target, line]))
     ]))

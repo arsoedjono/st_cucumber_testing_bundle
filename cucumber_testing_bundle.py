@@ -21,3 +21,9 @@ class RunCurrentFileCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     job = Job(self.view, edit)
     if job.is_executable(self.view.file_name()): Executor(job).run_current_file()
+
+# view.run_command("run_current_line")
+class RunCurrentLineCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
+    job = Job(self.view, edit)
+    if job.is_executable(self.view.file_name()): Executor(job).run_current_line()

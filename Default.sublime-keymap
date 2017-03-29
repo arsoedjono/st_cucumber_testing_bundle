@@ -3,5 +3,9 @@
   {
     "keys": ["alt+shift+c"],
     "command": "run_current_file"
-  }
+  },
+  {
+    "keys": ["alt+shift+l"],
+    "command": "run_current_line"
+  },
 ]
