@@ -1,3 +1,4 @@
 [
   { "caption": "CucumberTestingBundle: Run Cucumber", "command": "run_cucumber" },
+  { "caption": "CucumberTestingBundle: Run Current File", "command": "run_current_file" },
 ]
