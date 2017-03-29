@@ -16,6 +16,12 @@ This command is the same as running `cucumber` and run all cucumber testing scen
 
 ### Run Current File
 
-Run `cucumber` targeting the active view inside `Sublime Text`, same as `cucumber <file_name>`. Run it via:
+Run `cucumber` targeting the active view, same as `cucumber <file_name>`. Run it via:
 
 `Tools > CucumberTestingBundle > Run Current File` or `Alt + Shift + C` (by default)
+
+### Run Current Line
+
+Run `cucumber` targeting the active view and active line, same as `cucumber <file_name>:<line_number>`. Run it via:
+
+`Tools > CucumberTestingBundle > Run Current Line` or `Alt + Shift + L` (by default)
