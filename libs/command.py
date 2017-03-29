@@ -17,9 +17,10 @@ class Command(object):
     file_dir = os.path.expanduser(Settings("rvm_path").retrieve())
     if file_dir and os.path.isfile(file_dir): return "{0} -S".format(file_dir)
 
-  def retrieve(self):
-    return "{rvm} {bundler} {cucumber}".format(
-      rvm = self._get_rvm(),
-      bundler = self._get_bundler(),
-      cucumber = Settings("cucumber_command").retrieve()
-    )
+  def retrieve(self, target = None):
+    return " ".join(filter(None, [
+      self._get_rvm(),
+      self._get_bundler(),
+      Settings("cucumber_command").retrieve(),
+      target
+    ]))

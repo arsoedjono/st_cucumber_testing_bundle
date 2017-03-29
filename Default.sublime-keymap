@@ -2,6 +2,6 @@
   // run cucumber
   {
     "keys": ["alt+shift+c"],
-    "command": "run_cucumber"
+    "command": "run_current_file"
   }
 ]

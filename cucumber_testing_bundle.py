@@ -15,3 +15,9 @@ class RunCucumberCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     job = Job(self.view, edit)
     if job.is_executable(): Executor(job).run_cucumber()
+
+# view.run_command("run_current_file")
+class RunCurrentFileCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
+    job = Job(self.view, edit)
+    if job.is_executable(self.view.file_name()): Executor(job).run_current_file()
