@@ -14,6 +14,10 @@
             "caption": "Run Current File",
             "command": "run_current_file"
           },
+          {
+            "caption": "Run Current Line",
+            "command": "run_current_line"
+          },
         ]
       }
     ]
