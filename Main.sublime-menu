@@ -9,7 +9,11 @@
           {
             "caption": "Run Cucumber",
             "command": "run_cucumber"
-          }
+          },
+          {
+            "caption": "Run Current File",
+            "command": "run_current_file"
+          },
         ]
       }
     ]
