@@ -6,8 +6,6 @@ import sublime
 
 class Command(object):
   GEMFILE_NAME = "Gemfile"
-  SETTINGS_FILE = "CucumberTestingBundle.last"
-  LAST_RUN_KEY = "command"
 
   def __init__(self, job):
     self.job = job
@@ -21,7 +19,7 @@ class Command(object):
     if file_dir and os.path.isfile(file_dir): return "{0} -S".format(file_dir)
 
   def last_command(self):
-    return sublime.load_settings(self.SETTINGS_FILE).get(self.LAST_RUN_KEY)
+    return sublime.load_settings(Settings.SETTINGS_FILE).get(Settings.LAST_RUN_KEY)
 
   def retrieve(self, target = None, line = None, tags = None):
     return " ".join(filter(None, [
@@ -33,6 +31,6 @@ class Command(object):
     ]))
 
   def save(self, command):
-    settings = sublime.load_settings(self.SETTINGS_FILE)
-    settings.set(self.LAST_RUN_KEY, command)
-    sublime.save_settings(self.SETTINGS_FILE)
+    settings = sublime.load_settings(Settings.SETTINGS_FILE)
+    settings.set(Settings.LAST_RUN_KEY, command)
+    sublime.save_settings(Settings.SETTINGS_FILE)

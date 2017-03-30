@@ -1,6 +1,11 @@
 import sublime
 
 class Settings(object):
+  SETTINGS_FILE = "CucumberTestingBundle"
+
+  LAST_RUN_KEY = "command"
+  TAGS_KEY = "tags"
+
   def __init__(self, key):
     self.key = key
 

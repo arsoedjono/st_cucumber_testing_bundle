@@ -45,3 +45,8 @@ class CtbRunTagsCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     job = Job(self.view, edit)
     if job.is_executable(): Executor(job).run_tags()
+
+# view.run_command("ctb_set_default_tags")
+class CtbSetDefaultTags(sublime_plugin.TextCommand):
+  def run(self, edit):
+    Job(self.view, edit).save_tags()

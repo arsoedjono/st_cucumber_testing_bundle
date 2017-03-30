@@ -39,7 +39,7 @@ class Executor(object):
   def run_file_with_tags(self):
     self.job.window.show_input_panel(
       "Tags to run",
-      "",
+      self.job.get_tags(),
       self._run_file_with_tags,
       None,
       None
@@ -51,7 +51,7 @@ class Executor(object):
   def run_tags(self):
     self.job.window.show_input_panel(
       "Tags to run",
-      "",
+      self.job.get_tags(),
       self._run_tags,
       None,
       None
