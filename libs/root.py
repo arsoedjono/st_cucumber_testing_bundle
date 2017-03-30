@@ -7,8 +7,6 @@ class Root(object):
 
   def _via_inclusion(self):
     folder_name = "/{0}/".format(self.cucumber_folder_name)
-    print(folder_name)
-    print(self.file_name)
     if not folder_name in self.file_name: return
 
     return self.file_name[:self.file_name.rindex(folder_name)]

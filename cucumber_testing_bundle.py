@@ -27,3 +27,9 @@ class RunCurrentLineCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     job = Job(self.view, edit)
     if job.is_executable(self.view.file_name()): Executor(job).run_current_line()
+
+# view.run_command("run_last")
+class RunLastCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
+    job = Job(self.view, edit)
+    Executor(job).run_last()

@@ -8,4 +8,8 @@
     "keys": ["alt+shift+l"],
     "command": "run_current_line"
   },
+  {
+    "keys": ["alt+shift+z"],
+    "command": "run_last"
+  },
 ]

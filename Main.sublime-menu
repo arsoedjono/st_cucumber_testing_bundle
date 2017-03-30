@@ -18,6 +18,10 @@
             "caption": "Run Current Line",
             "command": "run_current_line"
           },
+          {
+            "caption": "Run Last Test",
+            "command": "run_last"
+          },
         ]
       }
     ]

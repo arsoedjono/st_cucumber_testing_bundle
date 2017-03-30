@@ -25,3 +25,9 @@ Run `cucumber` targeting the active view, same as `cucumber <file_name>`. Run it
 Run `cucumber` targeting the active view and active line, same as `cucumber <file_name>:<line_number>`. Run it via:
 
 `Tools > CucumberTestingBundle > Run Current Line` or `Alt + Shift + L` (by default)
+
+### Run Last Test
+
+Running previous command run by `CucumberTestingBundle`. Run it via:
+
+`Tools > CucumberTestingBundle > Run Last Test` or `Alt + Shift + Z` (by default)
