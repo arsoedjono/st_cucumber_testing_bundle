@@ -21,11 +21,11 @@ class Executor(object):
     cmd_obj.save(command)
     self._execute(command)
 
-  def _run_tags(self, tags):
-    self._prepare(None, None, tags)
-
   def _run_file_with_tags(self, tags):
     self._prepare(self.job.view.file_name(), None, tags)
+
+  def _run_tags(self, tags):
+    self._prepare(None, None, tags)
 
   def run_cucumber(self):
     self._prepare()
@@ -36,6 +36,15 @@ class Executor(object):
   def run_current_line(self):
     self._prepare(self.job.view.file_name(), self._line_number())
 
+  def run_file_with_tags(self):
+    self.job.window.show_input_panel(
+      "Tags to run",
+      "",
+      self._run_file_with_tags,
+      None,
+      None
+    )
+
   def run_last(self):
     self._execute(Command(self.job).last_command())
 
@@ -44,15 +53,6 @@ class Executor(object):
       "Tags to run",
       "",
       self._run_tags,
-      None,
-      None
-    )
-
-  def run_file_with_tags(self):
-    self.job.window.show_input_panel(
-      "Tags to run",
-      "",
-      self._run_file_with_tags,
       None,
       None
     )

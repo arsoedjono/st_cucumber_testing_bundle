@@ -28,6 +28,12 @@ class RunCurrentLineCommand(sublime_plugin.TextCommand):
     job = Job(self.view, edit)
     if job.is_executable(self.view.file_name()): Executor(job).run_current_line()
 
+# view.run_command("run_file_with_tags")
+class RunFileWithTagsCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
+    job = Job(self.view, edit)
+    if job.is_executable(self.view.file_name()): Executor(job).run_file_with_tags()
+
 # view.run_command("run_last")
 class RunLastCommand(sublime_plugin.TextCommand):
   def run(self, edit):
@@ -39,9 +45,3 @@ class RunTagsCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     job = Job(self.view, edit)
     if job.is_executable(): Executor(job).run_tags()
-
-# view.run_command("run_file_with_tags")
-class RunFileWithTagsCommand(sublime_plugin.TextCommand):
-  def run(self, edit):
-    job = Job(self.view, edit)
-    if job.is_executable(self.view.file_name()): Executor(job).run_file_with_tags()
