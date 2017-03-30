@@ -1,5 +1,6 @@
 [
   { "caption": "CucumberTestingBundle: Run Cucumber", "command": "run_cucumber" },
+  { "caption": "CucumberTestingBundle: Run Tags", "command": "run_tags" },
   { "caption": "CucumberTestingBundle: Run Current File", "command": "run_current_file" },
   { "caption": "CucumberTestingBundle: Run Current Line", "command": "run_current_line" },
   { "caption": "CucumberTestingBundle: Run Last Test", "command": "run_last" },

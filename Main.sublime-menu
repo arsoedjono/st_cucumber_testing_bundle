@@ -22,6 +22,11 @@
             "caption": "Run Last Test",
             "command": "run_last"
           },
+          { "caption": "-" },
+          {
+            "caption": "Run Tags",
+            "command": "run_tags"
+          },
         ]
       }
     ]
