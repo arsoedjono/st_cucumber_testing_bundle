@@ -23,12 +23,13 @@ class Command(object):
   def last_command(self):
     return sublime.load_settings(self.SETTINGS_FILE).get(self.LAST_RUN_KEY)
 
-  def retrieve(self, target = None, line = None):
+  def retrieve(self, target = None, line = None, tags = None):
     return " ".join(filter(None, [
       self._get_rvm(),
       self._get_bundler(),
       Settings("cucumber_command").retrieve(),
-      ":".join(filter(None, [target, line])) or None
+      ":".join(filter(None, [target, line])) or None,
+      tags
     ]))
 
   def save(self, command):

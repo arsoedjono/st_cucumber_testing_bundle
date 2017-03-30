@@ -33,3 +33,9 @@ class RunLastCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     job = Job(self.view, edit)
     Executor(job).run_last()
+
+# view.run_command("run_tags")
+class RunTagsCommand(sublime_plugin.TextCommand):
+  def run(self, edit):
+    job = Job(self.view, edit)
+    if job.is_executable(): Executor(job).run_tags()

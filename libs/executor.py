@@ -14,12 +14,15 @@ class Executor(object):
   def _line_number(self):
     return (str)(self.job.view.rowcol(self.job.view.sel()[0].begin())[0] + 1)
 
-  def _prepare(self, file_name = None, line = None):
+  def _prepare(self, file_name = None, line = None, tags = None):
     cmd_obj = Command(self.job)
-    command = cmd_obj.retrieve(file_name, line)
+    command = cmd_obj.retrieve(file_name, line, tags)
 
     cmd_obj.save(command)
     self._execute(command)
+
+  def _run_tags(self, tags):
+    self._prepare(None, None, tags)
 
   def run_cucumber(self):
     self._prepare()
@@ -32,3 +35,12 @@ class Executor(object):
 
   def run_last(self):
     self._execute(Command(self.job).last_command())
+
+  def run_tags(self):
+    self.job.window.show_input_panel(
+      "Tags to run",
+      "",
+      self._run_tags,
+      None,
+      None
+    )
