@@ -1,7 +1,9 @@
 [
   { "caption": "CucumberTestingBundle: Run Cucumber", "command": "ctb_run_cucumber" },
-  { "caption": "CucumberTestingBundle: Run Tags", "command": "ctb_run_tags" },
   { "caption": "CucumberTestingBundle: Run Current File", "command": "ctb_run_current_file" },
+  { "caption": "CucumberTestingBundle: Run Current File With Tags", "command": "ctb_run_file_with_tags" },
   { "caption": "CucumberTestingBundle: Run Current Line", "command": "ctb_run_current_line" },
   { "caption": "CucumberTestingBundle: Run Last Test", "command": "ctb_run_last" },
+  { "caption": "CucumberTestingBundle: Run Tags", "command": "ctb_run_tags" },
+  { "caption": "CucumberTestingBundle: Set Default Tags", "command": "ctb_set_default_tags" },
 ]

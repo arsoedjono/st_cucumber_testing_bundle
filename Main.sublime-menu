@@ -27,6 +27,14 @@
             "caption": "Run Tags",
             "command": "ctb_run_tags"
           },
+          {
+            "caption": "Run Current File With Tags",
+            "command": "ctb_run_file_with_tags"
+          },
+          {
+            "caption": "Set Default Tags",
+            "command": "ctb_set_default_tags"
+          },
         ]
       }
     ]
