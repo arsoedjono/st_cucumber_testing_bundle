@@ -8,24 +8,24 @@
         "children": [
           {
             "caption": "Run Cucumber",
-            "command": "run_cucumber"
+            "command": "ctb_run_cucumber"
           },
           {
             "caption": "Run Current File",
-            "command": "run_current_file"
+            "command": "ctb_run_current_file"
           },
           {
             "caption": "Run Current Line",
-            "command": "run_current_line"
+            "command": "ctb_run_current_line"
           },
           {
             "caption": "Run Last Test",
-            "command": "run_last"
+            "command": "ctb_run_last"
           },
           { "caption": "-" },
           {
             "caption": "Run Tags",
-            "command": "run_tags"
+            "command": "ctb_run_tags"
           },
         ]
       }
