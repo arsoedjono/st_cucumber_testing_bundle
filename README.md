@@ -8,26 +8,41 @@ Clone/Extract this repository to your Sublime Text 3 Packages folder
 
 ## Features
 
-### Run Cucumber
+### How to Run
 
-This command is the same as running `cucumber` and run all cucumber testing scenarios at recently opened file project root (where `features` folder exist). Run it via:
+Features listed below can be triggered and found from these ways:
 
-`Tools > CucumberTestingBundle > Run Cucumber`
+- Menu: `Tools > CucumberTestingBundle`
+- Command Palette: `Ctrl + Shift + P` and enter `CucumberTestingBundle`
 
-### Run Current File
+### Run Test
 
-Run `cucumber` targeting the active view, same as `cucumber <file_name>`. Run it via:
+#### Run Cucumber
 
-`Tools > CucumberTestingBundle > Run Current File` or `Alt + Shift + C` (by default)
+This command is the same as running `cucumber` and run all cucumber testing scenarios at recently opened file project root (where `features` folder exist).
 
-### Run Current Line
+#### Run Current File
 
-Run `cucumber` targeting the active view and active line, same as `cucumber <file_name>:<line_number>`. Run it via:
+Run `cucumber` targeting the active view, same as `cucumber <file_name>`.
 
-`Tools > CucumberTestingBundle > Run Current Line` or `Alt + Shift + L` (by default)
+#### Run Current Line
 
-### Run Last Test
+Run `cucumber` targeting the active view and active line, same as `cucumber <file_name>:<line_number>`.
 
-Running previous command run by `CucumberTestingBundle`. Run it via:
+#### Run Last Test
 
-`Tools > CucumberTestingBundle > Run Last Test` or `Alt + Shift + Z` (by default)
+Running previous command run by `CucumberTestingBundle`.
+
+### Tags
+
+#### Run Tags
+
+Run `cucumber` command and append inputted tags after it, same as `cucumber <tags>`
+
+#### Run Current File With Tags
+
+Run `cucumber` targeting the active view, same as `cucumber <file_name> <tags>`
+
+#### Set Default Tags
+
+Set (and overwrite, if existed) default tags that will be displayed when running `Run Tags` and `Run Current File With Tags`
