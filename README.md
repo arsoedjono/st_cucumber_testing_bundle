@@ -15,6 +15,8 @@ Features listed below can be triggered and found from these ways:
 - Menu: `Tools > CucumberTestingBundle`
 - Command Palette: `Ctrl + Shift + P` and enter `CucumberTestingBundle`
 
+---
+
 ### Run Test
 
 #### Run Cucumber
@@ -32,6 +34,8 @@ Run `cucumber` targeting the active view and active line, same as `cucumber <fil
 #### Run Last Test
 
 Running previous command run by `CucumberTestingBundle`.
+
+---
 
 ### Tags
 
